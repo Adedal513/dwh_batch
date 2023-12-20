@@ -1,0 +1,42 @@
+[2023-12-19T19:25:18.280+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_dwh.hub_job_role_update manual__2023-12-19T19:25:12.483862+00:00 [queued]>
+[2023-12-19T19:25:18.288+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_dwh.hub_job_role_update manual__2023-12-19T19:25:12.483862+00:00 [queued]>
+[2023-12-19T19:25:18.288+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-19T19:25:18.297+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): hub_job_role_update> on 2023-12-19 19:25:12.483862+00:00
+[2023-12-19T19:25:18.302+0000] {standard_task_runner.py:57} INFO - Started process 750 to run task
+[2023-12-19T19:25:18.306+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'update_dwh', 'hub_job_role_update', 'manual__2023-12-19T19:25:12.483862+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/update_dwh_dag.py', '--cfg-path', '/tmp/tmp7auj3s32']
+[2023-12-19T19:25:18.308+0000] {standard_task_runner.py:85} INFO - Job 344: Subtask hub_job_role_update
+[2023-12-19T19:25:18.352+0000] {task_command.py:416} INFO - Running <TaskInstance: update_dwh.hub_job_role_update manual__2023-12-19T19:25:12.483862+00:00 [running]> on host 5e0c64ad45d7
+[2023-12-19T19:25:18.433+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_dwh' AIRFLOW_CTX_TASK_ID='hub_job_role_update' AIRFLOW_CTX_EXECUTION_DATE='2023-12-19T19:25:12.483862+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-19T19:25:12.483862+00:00'
+[2023-12-19T19:25:18.435+0000] {sql.py:274} INFO - Executing: 
+INSERT INTO rdv.hub_job_role
+SELECT DISTINCT
+    MD5(p.jobrole),
+    now(),
+    'csv',
+    p.jobrole
+FROM 
+    staging.stg_table p
+WHERE p.jobrole NOT IN (
+    SELECT hub.job_role_name FROM rdv.hub_job_role hub
+)
+[2023-12-19T19:25:18.443+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-12-19T19:25:18.445+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/models/connection.py:374: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  return hook_class(**{hook.connection_id_attribute_name: self.conn_id}, **hook_params)
+
+[2023-12-19T19:25:18.449+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-12-19T19:25:18.516+0000] {sql.py:418} INFO - Running statement: 
+INSERT INTO rdv.hub_job_role
+SELECT DISTINCT
+    MD5(p.jobrole),
+    now(),
+    'csv',
+    p.jobrole
+FROM 
+    staging.stg_table p
+WHERE p.jobrole NOT IN (
+    SELECT hub.job_role_name FROM rdv.hub_job_role hub
+), parameters: None
+[2023-12-19T19:25:18.538+0000] {sql.py:427} INFO - Rows affected: 0
+[2023-12-19T19:25:18.564+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=update_dwh, task_id=hub_job_role_update, execution_date=20231219T192512, start_date=20231219T192518, end_date=20231219T192518
+[2023-12-19T19:25:18.600+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-19T19:25:18.619+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

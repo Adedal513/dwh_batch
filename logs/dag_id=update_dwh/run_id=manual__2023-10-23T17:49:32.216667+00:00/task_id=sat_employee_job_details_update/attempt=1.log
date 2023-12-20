@@ -1,0 +1,58 @@
+[2023-10-23T17:50:19.467+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_dwh.sat_employee_job_details_update manual__2023-10-23T17:49:32.216667+00:00 [queued]>
+[2023-10-23T17:50:19.500+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_dwh.sat_employee_job_details_update manual__2023-10-23T17:49:32.216667+00:00 [queued]>
+[2023-10-23T17:50:19.500+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-10-23T17:50:19.521+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): sat_employee_job_details_update> on 2023-10-23 17:49:32.216667+00:00
+[2023-10-23T17:50:19.535+0000] {standard_task_runner.py:57} INFO - Started process 4539 to run task
+[2023-10-23T17:50:19.558+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'update_dwh', 'sat_employee_job_details_update', 'manual__2023-10-23T17:49:32.216667+00:00', '--job-id', '254', '--raw', '--subdir', 'DAGS_FOLDER/update_dwh_dag.py', '--cfg-path', '/tmp/tmp9n1iqcro']
+[2023-10-23T17:50:19.589+0000] {standard_task_runner.py:85} INFO - Job 254: Subtask sat_employee_job_details_update
+[2023-10-23T17:50:19.714+0000] {task_command.py:416} INFO - Running <TaskInstance: update_dwh.sat_employee_job_details_update manual__2023-10-23T17:49:32.216667+00:00 [running]> on host 1f8bb8a692af
+[2023-10-23T17:50:20.035+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_dwh' AIRFLOW_CTX_TASK_ID='sat_employee_job_details_update' AIRFLOW_CTX_EXECUTION_DATE='2023-10-23T17:49:32.216667+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-23T17:49:32.216667+00:00'
+[2023-10-23T17:50:20.036+0000] {sql.py:274} INFO - Executing: 
+    INSERT INTO rdv.sat_employee_job_details
+    SELECT DISTINCT
+        md5(so.employeenumber::text),
+        'csv',
+        now(),
+        case when so.attrition = 'Yes' then true else false end,
+        so.hourlyrate,
+        so.joblevel,
+        so.standardhours,
+        so.stockoptionlevel
+    FROM
+        staging.stg_table so
+    LEFT OUTER JOIN rdv.sat_employee_job_details sat ON (sat.employee_hash_key = md5(so.employeenumber::text) AND sat.created_at IS NULL)
+    where 
+        coalesce(case when so.attrition = 'Yes' then true else false end, false) != coalesce(sat.attrition, false) or
+        coalesce(so.joblevel, 0) != coalesce(sat.job_level, 0) or
+        coalesce(so.hourlyrate, 0) != coalesce(sat.hourly_rate, 0) or
+        coalesce(so.standardhours, 0) != coalesce(sat.standard_hours, 0) or
+        coalesce(so.stockoptionlevel, 0) != coalesce(sat.stock_option_level, 0)
+[2023-10-23T17:50:20.060+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-10-23T17:50:20.065+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/models/connection.py:374: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  return hook_class(**{hook.connection_id_attribute_name: self.conn_id}, **hook_params)
+
+[2023-10-23T17:50:20.073+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-10-23T17:50:20.157+0000] {sql.py:418} INFO - Running statement: 
+    INSERT INTO rdv.sat_employee_job_details
+    SELECT DISTINCT
+        md5(so.employeenumber::text),
+        'csv',
+        now(),
+        case when so.attrition = 'Yes' then true else false end,
+        so.hourlyrate,
+        so.joblevel,
+        so.standardhours,
+        so.stockoptionlevel
+    FROM
+        staging.stg_table so
+    LEFT OUTER JOIN rdv.sat_employee_job_details sat ON (sat.employee_hash_key = md5(so.employeenumber::text) AND sat.created_at IS NULL)
+    where 
+        coalesce(case when so.attrition = 'Yes' then true else false end, false) != coalesce(sat.attrition, false) or
+        coalesce(so.joblevel, 0) != coalesce(sat.job_level, 0) or
+        coalesce(so.hourlyrate, 0) != coalesce(sat.hourly_rate, 0) or
+        coalesce(so.standardhours, 0) != coalesce(sat.standard_hours, 0) or
+        coalesce(so.stockoptionlevel, 0) != coalesce(sat.stock_option_level, 0), parameters: None
+[2023-10-23T17:50:20.234+0000] {sql.py:427} INFO - Rows affected: 1470
+[2023-10-23T17:50:20.269+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=update_dwh, task_id=sat_employee_job_details_update, execution_date=20231023T174932, start_date=20231023T175019, end_date=20231023T175020
+[2023-10-23T17:50:20.316+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-23T17:50:20.346+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,77 @@
+[2023-10-23T17:47:06.680+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_dwh.sat_employee_history_update manual__2023-10-23T17:44:02.944833+00:00 [queued]>
+[2023-10-23T17:47:06.693+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_dwh.sat_employee_history_update manual__2023-10-23T17:44:02.944833+00:00 [queued]>
+[2023-10-23T17:47:06.693+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-10-23T17:47:06.709+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): sat_employee_history_update> on 2023-10-23 17:44:02.944833+00:00
+[2023-10-23T17:47:06.720+0000] {standard_task_runner.py:57} INFO - Started process 4427 to run task
+[2023-10-23T17:47:06.724+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'update_dwh', 'sat_employee_history_update', 'manual__2023-10-23T17:44:02.944833+00:00', '--job-id', '231', '--raw', '--subdir', 'DAGS_FOLDER/update_dwh_dag.py', '--cfg-path', '/tmp/tmp60bmk1qr']
+[2023-10-23T17:47:06.727+0000] {standard_task_runner.py:85} INFO - Job 231: Subtask sat_employee_history_update
+[2023-10-23T17:47:06.776+0000] {task_command.py:416} INFO - Running <TaskInstance: update_dwh.sat_employee_history_update manual__2023-10-23T17:44:02.944833+00:00 [running]> on host 1f8bb8a692af
+[2023-10-23T17:47:06.888+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_dwh' AIRFLOW_CTX_TASK_ID='sat_employee_history_update' AIRFLOW_CTX_EXECUTION_DATE='2023-10-23T17:44:02.944833+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-23T17:44:02.944833+00:00'
+[2023-10-23T17:47:06.890+0000] {sql.py:274} INFO - Executing: 
+INSERT INTO TABLE rdv.sat_employee_history
+SELECT DISTINCT
+	md5(so.employeenumber::text),
+	'csv',
+	now(),
+	so.numcompaniesworked,
+	so.totalworkingyears,
+	so.yearsatcompany,
+	so.yearsincurrentrole,
+	so.yearssincelastpromotion,
+	so.yearsincurrentrole
+FROM
+    staging.stg_table so
+LEFT OUTER JOIN rdv.sat_employee_history sat ON (sat.employee_hash_key = md5(so.employeenumber::text) AND sat.created_at IS NULL)
+where 
+	coalesce(so.numcompaniesworked, 0) != coalesce(sat.num_companies_worked, 0) or
+	coalesce(so.totalworkingyears, 0) != coalesce(sat.total_working_years, 0) or
+	coalesce(so.yearsatcompany, 0) != coalesce(sat.years_at_company, 0) or
+	coalesce(so.yearsincurrentrole, 0) != coalesce(sat.years_in_current_role, 0) or
+	coalesce(so.yearssincelastpromotion, 0) != coalesce(sat.years_since_last_promotion, 0) or
+	coalesce(so.yearsincurrentrole, 0) != coalesce(sat.years_with_current_manager, 0)
+[2023-10-23T17:47:06.905+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-10-23T17:47:06.908+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/models/connection.py:374: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  return hook_class(**{hook.connection_id_attribute_name: self.conn_id}, **hook_params)
+
+[2023-10-23T17:47:06.919+0000] {base.py:73} INFO - Using connection ID 'stg_conn' for task execution.
+[2023-10-23T17:47:07.005+0000] {sql.py:418} INFO - Running statement: 
+INSERT INTO TABLE rdv.sat_employee_history
+SELECT DISTINCT
+	md5(so.employeenumber::text),
+	'csv',
+	now(),
+	so.numcompaniesworked,
+	so.totalworkingyears,
+	so.yearsatcompany,
+	so.yearsincurrentrole,
+	so.yearssincelastpromotion,
+	so.yearsincurrentrole
+FROM
+    staging.stg_table so
+LEFT OUTER JOIN rdv.sat_employee_history sat ON (sat.employee_hash_key = md5(so.employeenumber::text) AND sat.created_at IS NULL)
+where 
+	coalesce(so.numcompaniesworked, 0) != coalesce(sat.num_companies_worked, 0) or
+	coalesce(so.totalworkingyears, 0) != coalesce(sat.total_working_years, 0) or
+	coalesce(so.yearsatcompany, 0) != coalesce(sat.years_at_company, 0) or
+	coalesce(so.yearsincurrentrole, 0) != coalesce(sat.years_in_current_role, 0) or
+	coalesce(so.yearssincelastpromotion, 0) != coalesce(sat.years_since_last_promotion, 0) or
+	coalesce(so.yearsincurrentrole, 0) != coalesce(sat.years_with_current_manager, 0), parameters: None
+[2023-10-23T17:47:07.030+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 280, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 392, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 423, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "TABLE"
+LINE 2: INSERT INTO TABLE rdv.sat_employee_history
+                    ^
+
+[2023-10-23T17:47:07.037+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=update_dwh, task_id=sat_employee_history_update, execution_date=20231023T174402, start_date=20231023T174706, end_date=20231023T174707
+[2023-10-23T17:47:07.052+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 231 for task sat_employee_history_update (syntax error at or near "TABLE"
+LINE 2: INSERT INTO TABLE rdv.sat_employee_history
+                    ^
+; 4427)
+[2023-10-23T17:47:07.101+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-23T17:47:07.132+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

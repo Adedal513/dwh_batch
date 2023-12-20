@@ -1,0 +1,210 @@
+[2023-10-27T16:56:47.334+0000] {processor.py:157} INFO - Started process (PID=3615) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:56:47.335+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:56:47.336+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:56:47.336+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:56:47.370+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:56:47.397+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:56:47.397+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:56:47.419+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:56:47.419+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-26T00:00:00+00:00, run_after=2023-10-27T00:00:00+00:00
+[2023-10-27T16:56:47.433+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.101 seconds
+[2023-10-27T16:57:17.472+0000] {processor.py:157} INFO - Started process (PID=3671) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:17.474+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:57:17.476+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:17.475+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:17.483+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:17.498+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:17.498+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:57:17.513+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:17.513+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:57:17.524+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.055 seconds
+[2023-10-27T16:57:48.458+0000] {processor.py:157} INFO - Started process (PID=3727) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:48.460+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:57:48.462+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:48.462+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:48.469+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:57:48.484+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:48.484+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:57:48.501+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:57:48.500+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:57:48.512+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T16:58:19.188+0000] {processor.py:157} INFO - Started process (PID=3784) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:19.191+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:58:19.192+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:19.192+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:19.199+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:19.214+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:19.214+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:58:19.231+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:19.231+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:58:19.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T16:58:50.126+0000] {processor.py:157} INFO - Started process (PID=3841) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:50.128+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:58:50.130+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:50.130+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:50.137+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:58:50.154+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:50.154+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:58:50.172+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:58:50.172+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:58:50.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.062 seconds
+[2023-10-27T16:59:21.133+0000] {processor.py:157} INFO - Started process (PID=3897) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:21.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:59:21.137+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:21.137+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:21.144+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:21.159+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:21.159+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:59:21.175+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:21.175+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:59:21.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.055 seconds
+[2023-10-27T16:59:51.865+0000] {processor.py:157} INFO - Started process (PID=3953) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:51.867+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T16:59:51.869+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:51.868+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:51.876+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T16:59:51.893+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:51.893+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T16:59:51.908+0000] {logging_mixin.py:151} INFO - [2023-10-27T16:59:51.908+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T16:59:51.919+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T17:00:22.631+0000] {processor.py:157} INFO - Started process (PID=4009) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:22.633+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:00:22.635+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:22.634+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:22.643+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:22.661+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:22.661+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:00:22.679+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:22.679+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:00:22.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.062 seconds
+[2023-10-27T17:00:53.630+0000] {processor.py:157} INFO - Started process (PID=4065) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:53.631+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:00:53.632+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:53.632+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:53.640+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:00:53.656+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:53.656+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:00:53.673+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:00:53.673+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:00:53.687+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.059 seconds
+[2023-10-27T17:01:24.579+0000] {processor.py:157} INFO - Started process (PID=4128) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:24.581+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:01:24.582+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:24.582+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:24.590+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:24.605+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:24.605+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:01:24.621+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:24.621+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:01:24.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T17:01:55.282+0000] {processor.py:157} INFO - Started process (PID=4184) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:55.285+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:01:55.286+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:55.286+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:55.293+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:01:55.308+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:55.308+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:01:55.325+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:01:55.325+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:01:55.337+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.057 seconds
+[2023-10-27T17:02:26.245+0000] {processor.py:157} INFO - Started process (PID=4240) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:26.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:02:26.249+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:26.249+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:26.256+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:26.271+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:26.271+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:02:26.287+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:26.287+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:02:26.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.055 seconds
+[2023-10-27T17:02:57.136+0000] {processor.py:157} INFO - Started process (PID=4296) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:57.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:02:57.138+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:57.137+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:57.145+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:02:57.161+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:57.161+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:02:57.177+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:02:57.177+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:02:57.188+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.054 seconds
+[2023-10-27T17:03:28.085+0000] {processor.py:157} INFO - Started process (PID=4353) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:28.086+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:03:28.087+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:28.087+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:28.098+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:28.117+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:28.117+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:03:28.140+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:28.140+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:03:28.159+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.076 seconds
+[2023-10-27T17:03:59.042+0000] {processor.py:157} INFO - Started process (PID=4409) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:59.045+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:03:59.046+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:59.046+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:59.057+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:03:59.078+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:59.078+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:03:59.102+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:03:59.101+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:03:59.117+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.077 seconds
+[2023-10-27T17:04:30.007+0000] {processor.py:157} INFO - Started process (PID=4465) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:04:30.010+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:04:30.011+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:04:30.011+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:04:30.019+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:04:30.039+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:04:30.039+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:04:30.062+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:04:30.062+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:04:30.078+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.073 seconds
+[2023-10-27T17:05:00.939+0000] {processor.py:157} INFO - Started process (PID=4522) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:00.942+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:05:00.943+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:00.943+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:00.950+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:00.966+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:00.965+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:05:00.982+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:00.981+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:05:00.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T17:05:31.780+0000] {processor.py:157} INFO - Started process (PID=4578) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:31.781+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:05:31.782+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:31.782+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:31.789+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:05:31.807+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:31.807+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:05:31.824+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:05:31.824+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:05:31.839+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.061 seconds
+[2023-10-27T17:06:02.660+0000] {processor.py:157} INFO - Started process (PID=4634) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:02.662+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:06:02.664+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:02.663+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:02.671+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:02.686+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:02.686+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:06:02.703+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:02.703+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:06:02.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.059 seconds
+[2023-10-27T17:06:32.809+0000] {processor.py:157} INFO - Started process (PID=4690) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:32.809+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:06:32.811+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:32.811+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:32.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:06:32.836+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:32.836+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:06:32.851+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:06:32.851+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:06:32.862+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.055 seconds
+[2023-10-27T17:07:02.926+0000] {processor.py:157} INFO - Started process (PID=4746) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:02.928+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:07:02.930+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:02.930+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:02.939+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:02.957+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:02.957+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:07:02.973+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:02.973+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:07:02.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.061 seconds
+[2023-10-27T17:07:33.085+0000] {processor.py:157} INFO - Started process (PID=4802) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:33.087+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:07:33.089+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:33.088+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:33.096+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:07:33.112+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:33.112+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:07:33.127+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:07:33.126+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:07:33.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.056 seconds
+[2023-10-27T17:08:03.223+0000] {processor.py:157} INFO - Started process (PID=4858) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:03.224+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:08:03.225+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:03.225+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:03.235+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:03.253+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:03.253+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:08:03.268+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:03.268+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:08:03.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.057 seconds
+[2023-10-27T17:08:34.021+0000] {processor.py:157} INFO - Started process (PID=4914) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:34.022+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:08:34.023+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:34.023+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:34.030+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:08:34.047+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:34.047+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:08:34.067+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:08:34.067+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:08:34.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.060 seconds
+[2023-10-27T17:09:04.780+0000] {processor.py:157} INFO - Started process (PID=4970) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:04.780+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:09:04.781+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:04.781+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:04.788+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:04.805+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:04.805+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:09:04.822+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:04.822+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:09:04.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.058 seconds
+[2023-10-27T17:09:35.535+0000] {processor.py:157} INFO - Started process (PID=5027) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:35.537+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:09:35.538+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:35.538+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:35.545+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:09:35.561+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:35.561+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:09:35.576+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:09:35.576+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:09:35.587+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.054 seconds
+[2023-10-27T17:10:06.272+0000] {processor.py:157} INFO - Started process (PID=5083) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:06.274+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:10:06.276+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:06.276+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:06.283+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:06.299+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:06.299+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:10:06.316+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:06.316+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:10:06.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.063 seconds
+[2023-10-27T17:10:37.004+0000] {processor.py:157} INFO - Started process (PID=5139) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:37.007+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:10:37.008+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:37.008+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:37.015+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:10:37.030+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:37.030+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:10:37.045+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:10:37.045+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:10:37.056+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.053 seconds
+[2023-10-27T17:11:07.716+0000] {processor.py:157} INFO - Started process (PID=5195) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:07.718+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:11:07.720+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:07.719+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:07.727+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:07.744+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:07.744+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:11:07.761+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:07.761+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:11:07.775+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.064 seconds
+[2023-10-27T17:11:38.464+0000] {processor.py:157} INFO - Started process (PID=5251) to work on /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:38.465+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update_dwh_dag.py for tasks to queue
+[2023-10-27T17:11:38.466+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:38.466+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:38.473+0000] {processor.py:839} INFO - DAG(s) dict_keys(['update_dwh']) retrieved from /opt/airflow/dags/update_dwh_dag.py
+[2023-10-27T17:11:38.491+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:38.490+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-27T17:11:38.506+0000] {logging_mixin.py:151} INFO - [2023-10-27T17:11:38.506+0000] {dag.py:3722} INFO - Setting next_dagrun for update_dwh to 2023-10-27T00:00:00+00:00, run_after=2023-10-28T00:00:00+00:00
+[2023-10-27T17:11:38.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update_dwh_dag.py took 0.055 seconds
